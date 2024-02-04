@@ -22,7 +22,7 @@ color_picker = ["icons", "iced_widget/canvas"]
 cupertino = ["iced_widget/canvas", "time"]
 floating_element = []
 grid = ["itertools"]
-glow = []                                                   # TODO
+glow = []                                               # TODO
 icons = []
 modal = []
 tab_bar = []
@@ -73,9 +73,8 @@ itertools = { version = "0.11.0", optional = true }
 
 
 [dependencies.iced_widget]
-git = "https://github.com/iced-rs/iced.git"
-#rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
-#version = "0.1.1"
+git = "https://github.com/Davidster/iced.git"
+branch = "master"
 
 [profile.dev.package."*"]
 opt-level = 2
@@ -112,9 +111,8 @@ members = [
 ]
 
 [workspace.dependencies.iced]
-git = "https://github.com/iced-rs/iced.git"
-#rev = "b474a2b7a763dcde6a377cb409001a7b5285ee8d"
-#version = "0.10.0"
+git = "https://github.com/Davidster/iced.git"
+branch = "master"
 features = ["advanced", "lazy", "tokio"]
 
 [workspace.dependencies.iced_aw]
